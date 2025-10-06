@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- <form action="" class="search-bar">
+            <input type="text" placeholder="What do you want to listen to?" name="q">
+            <button type="submit"><img src="search.jpg" alt="search_img"></button>
+        </form> -->
+        <i class="fas fa-home"></i> <!-- Updated FontAwesome icon class -->
+        <div class="fixed-bar" id="fixedBar">
+            Click here to journal!
+        </div>
+        <div class="logo" >
+            <img src="logo2.png" alt ="logo ">
+        </div>
+        <ul class="wrapper">
+            <li class="happy"  onclick="navigateToPage('happy.html')">
+                <span class="tooltip">happy</span>
+                <img src="happy3.png" alt="happy image">
+            </li>
+            <li class="angry2">
+                <li class="angry2"  onclick="navigateToPage('angry.html')">
+                <span class="tooltip">sad</span>
+                <img src="angry2.png" alt="angry img">
+            </li>
+            <li class="bored">
+                <li class="bored"  onclick="navigateToPage('bored.html')">
+                <span class="tooltip">angry</span>
+                <img src="stressed.png"alt="sad image">
+            </li>
+            <li class="sleepy">
+                <li class="sleepy"  onclick="navigateToPage('sleepy.html')">
+                <span class="tooltip">sad</span>
+                <img src="sleepy.png"alt="sleepy image">
+            </li>
+            <li class="calm">
+                <li class="calm"  onclick="navigateToPage('calm.html')">
+                <span class="tooltip">sad</span>
+                <img src="happy2.png"alt="calm image">
+            </li>
+            <li class="anxious">
+                <li class="anxious"  onclick="navigateToPage('anxious.html')">
+                <span class="tooltip">sad</span>
+                <img src="anxious.png"alt="calm image">
+            </li>
+            <li class="cry">
+                <li class="cry"  onclick="navigateToPage('cry.html')">
+                <span class="tooltip">cry</span>
+                <img src="cry.png"alt="cry image">
+            </li>
+            <li class="cheerful">
+                <li class="cheerful"  onclick="navigateToPage('cheerful.html')">
+                <span class="tooltip">cry</span>
+                <img src="cheerful.png"alt="cheerful image">
+            </li>
+           
+        </ul>
+        <div id="calendarModal" class="modal">
+            <div class="modal-content">
+                <h2>Calendar</h2>
+                <div class="calendar" id="calendar"></div>
+                <div class="journal-form" id="journalForm">
+                    <textarea id="journalEntry" placeholder="Write your journal entry here..." required></textarea>
+                    <button id="saveEntry">Save Entry</button>
+                </div>
+                <span class="close" onclick="closeCalendar">&times;</span>
+                <h3>What are you feeling today?</h3>
+        <div class="calendar" id="calendar"></div>
+        <div class="journal-form" id="journalForm">
+            <textarea id="journalEntry" placeholder="Write your journal entry here..." required></textarea>
+            <button id="saveEntry">Save Entry</button>
+        </div>
+      
+            </div>
+        </div>
+    </div>
+
+    <script src="proj5.js"></script>
+</body>
+</html>

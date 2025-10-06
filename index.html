@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Muse</title>
+  <link rel="stylesheet" href="style20.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <form id="loginForm" action="" method="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a id="registerLink" href="#">Register</a></p>
+      </div>
+    </form>
+
+    <form id="signupForm" action="" method="" style="display: none;">
+      <h1>Sign Up</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Email" required>
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </div>
+  <script>
+       document.addEventListener("DOMContentLoaded", function() {
+      const loginForm = document.getElementById("loginForm");
+      const signupForm = document.getElementById("signupForm");
+      const registerLink = document.getElementById("registerLink");
+
+      function showLoginForm() {
+        loginForm.style.display = "block";
+        signupForm.style.display = "none";
+      }
+
+      function showSignupForm() {
+        loginForm.style.display = "none";
+        signupForm.style.display = "block";
+      }
+     
+      // Initial setup
+      showLoginForm();
+
+      registerLink.addEventListener("click", showSignupForm);
+
+      const loginButton = document.querySelector("#loginForm .btn"); // Select login button within the login form
+
+      loginButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent form submission (since it's not defined)
+
+        // Redirect to another page when login button is clicked
+        window.location.href = "index5.html";
+      });
+    });
+  </script>
+    
+</body>
+</html>
